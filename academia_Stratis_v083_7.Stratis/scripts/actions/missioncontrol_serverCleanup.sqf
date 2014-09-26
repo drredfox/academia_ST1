@@ -1,0 +1,1 @@
+[[false,0],"THR_cleanup",false,false] spawn BIS_fnc_MP;

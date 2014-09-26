@@ -1,0 +1,1 @@
+[[],"THR_UrbanTraining",false,false] spawn BIS_fnc_MP;

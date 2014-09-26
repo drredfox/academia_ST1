@@ -1,0 +1,1 @@
+nul = [(_this select 3) select 0,(_this select 3) select 1, (_this select 3) select 2] spawn THR_VehicleSpawner;
