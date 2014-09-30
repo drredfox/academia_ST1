@@ -1,10 +1,12 @@
-//this addAction [("<t color=""#BFFF00"">" + "Ir a xxx" + "</t>"), "call fnc_teleport",[bandera,altura]];
+//DESCRIPCION:	Teleporta al jugador a la posicion y rumbo de un determinado objeto, con un pequeño oscurecimiento de pantalla estetico.
+//COMPILACION	call compile preprocessFileLineNumbers "scripts\functions\fnc_teleport.sqf";
+//LLAMADA:		[OBJETO] call fnc_teleport;
 
 fnc_teleport = {
-private ["_caller","_target","_height"];
-_caller = _this select 1;
-_target = (_this select 3) select 0;
-_height = (_this select 3) select 1;
-_target = getPos _target;
-_caller setPos[(_target select 0)+0.5, _target select 1, (_target select 2)+_height];
+_pos=_this select 0;
+closeDialog 0;
+cutText ["","BLACK out",0.5];
+player setPos position _pos;
+player setDir direction _pos;
+cutText ["","BLACK in",0.5];
 };

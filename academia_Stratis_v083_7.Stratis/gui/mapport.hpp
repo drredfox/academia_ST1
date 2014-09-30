@@ -15,7 +15,7 @@ class RscText_1000: RscText //Frame de fondo
 class RscText_1001: RscText
 {
 	idc = 1001;
-	text = "Teleportar a"; //--- ToDo: Localize;
+	text = "Teleportar a";
 	x = 0.328646 * safezoneW + safezoneX;
 	y = 0.300143 * safezoneH + safezoneY;
 	w = 0.0611979 * safezoneW;
@@ -29,7 +29,7 @@ class RscFrame_1800: RscFrame //Borde del frame de fondo
 	w = 0.401042 * safezoneW;
 	h = 0.453573 * safezoneH;
 };
-class RscPicture_1200: RscMapcontrol
+class RscPicture_1200: RscMapcontrol //Mapa
 {
 	idc = 1200;
 	text = "";
@@ -38,65 +38,67 @@ class RscPicture_1200: RscMapcontrol
 	w = 0.272135 * safezoneW;
 	h = 0.426084 * safezoneH;
 };
+
+//Botones
 class RscButton_1600: RscButton
 {
 	idc = 1600;
-	text = "Weapons and Clothing"; //--- ToDo: Localize;
+	text = "Base Kamino";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.336016 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_A1] call fnc_teleport;";
+	action="[TP_Kamino] call fnc_teleport;";
 };
 class RscButton_1601: RscButton
 {
 	idc = 1601;
-	text = "Helicopter Spawner"; //--- ToDo: Localize;
+	text = "Campo Francotiradores";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.376298 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot_1]execVM 'mapport.sqf';";
+	action="[TP_Franco] call fnc_teleport;";
 };
 class RscButton_1602: RscButton
 {
 	idc = 1602;
-	text = "Wheeled Vehicles"; //--- ToDo: Localize;
+	text = "Campo Morteros";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.417532 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot]execVM 'mapport.sqf';";
+	action="[TP_Morteros] call fnc_teleport;";
 };
 class RscButton_1603: RscButton
 {
 	idc = 1603;
-	text = "Boat spawner"; //--- ToDo: Localize;
+	text = "Practicas Demoliciones";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.458766 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot_2]execVM 'mapport.sqf';";
+	action="[TP_Demoliciones] call fnc_teleport;";
 };
 class RscButton_1604: RscButton
 {
 	idc = 1604;
-	text = "Tracked Vehicles"; //--- ToDo: Localize;
+	text = "Base Aerea";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot_3]execVM 'mapport.sqf';";
+	action="[TP_BAerea] call fnc_teleport;";
 };
-class RscButton_1606: RscButton
+/* class RscButton_1606: RscButton
 {
 	idc = 1606;
-	text = "Drone spawner"; //--- ToDo: Localize;
+	text = "Drone spawner";
 	x = 0.306641 * safezoneW + safezoneX;
 	y = 0.541234 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot_4]execVM 'mapport.sqf';";
+	action="[TP_Franco] call fnc_teleport;";
 };
 class RscButton_1607: RscButton
 {
@@ -106,7 +108,7 @@ class RscButton_1607: RscButton
 	y = 0.582468 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Vehprot_5]execVM 'mapport.sqf';";
+	action="[TP_Franco] call fnc_teleport;";
 };
 class RscButton_1605: RscButton
 {
@@ -116,8 +118,9 @@ class RscButton_1605: RscButton
 	y = 0.623702 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[Shorange]execVM 'mapport.sqf';";
-};
+	action="[TP_Franco] call fnc_teleport;";
+};*/
+
 class RscFrame_1801: RscFrame //Efecto 3D boton Cerrar
 {
 	idc = 1801;
@@ -132,7 +135,7 @@ class RscFrame_1801: RscFrame //Efecto 3D boton Cerrar
 class RscShortcutButton_1700: RscShortcutButton
 {
 	idc = 1700;
-	text = "Cerrar"; //--- ToDo: Localize;
+	text = "Cerrar";
 	x = 0.328125 * safezoneW + safezoneX;
 	y = 0.67868 * safezoneH + safezoneY;
 	w = 0.0644531 * safezoneW;

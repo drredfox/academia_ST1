@@ -36,20 +36,6 @@
 		flag_naval allowDamage false;
 		flag_naval addAction [("<t color=""#BFFF00"">" + "Crear vehiculo" + "</t>"), "scripts\actions\spawnVehicle.sqf",["water","sspwn1",310], 3, false, true, "", ""];
 
-	//Air base teleport; case 4
-
-		flag_air setflagtexture 'images\st1.paa';
-		flag_air addAction [("<t color=""#BFFF00"">" + "Ir a la Base terrestre" + "</t>"), "call fnc_teleport",[flag_kamino,0]];
-
-	//Kamino firing range teleport; case 5
-
-		flag_kamino setflagtexture 'images\st1.paa';
-
-	//Kamino long distance firing range teleport; case 6
-
-		flag_kamino_ld setflagtexture 'images\st1.paa';
-		flag_kamino_ld addAction [("<t color=""#BFFF00"">" + "Ir a la Base terrestre" + "</t>"), "call fnc_teleport",[flag_kamino,0]];
-
 	//VAS+equipment crate; case 7
 
 		VAS_1 allowDamage false;
