@@ -5,6 +5,7 @@ class CfgFunctions
 #include "gui\defines.hpp"
 #include "gui\mapport.hpp"
 #include "gui\vehicleSpawner.hpp"
+#include "gui\halo.hpp"
 
 #include "ASORGS\menu.hpp"
 #include "scripts\ShootingRange\common.hpp"
@@ -27,7 +28,7 @@ disabledAI = 1;
 saving = 0;
 
 author = ST1;
-overviewPicture = "\a3\missions_f\data\img\skirmish_overview_ca.paa";
+overviewPicture = "images\splash_academia.jpg";
 overviewText = "Academia Combinada ST1 - v0.84";
 onLoadName = Academia Stratis;
 loadScreen = "images\splash_academia.jpg";

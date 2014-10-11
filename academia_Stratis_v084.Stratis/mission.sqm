@@ -78,7 +78,7 @@ class Mission
 	randomSeed=6545614;
 	class Intel
 	{
-		briefingName="Academia Combinada Stratis v0.83.7";
+		briefingName="Academia Combinada Stratis v0.84";
 		resistanceEast=1;
 		timeOfChanges=28800;
 		startWeather=0;
@@ -3198,6 +3198,7 @@ class Mission
 			vehicle="FlagSmall_F";
 			skill=0.60000002;
 			text="flag_halo";
+			init="this addAction[(""<t color=""""#ed6b0b"""">"" + (""Salto HALO"") + ""</t>""),""createDialog 'GUI_halo';""]; this enableSimulation false; this allowDamage false;";
 		};
 		class Item222
 		{

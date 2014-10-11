@@ -18,10 +18,6 @@ ASOR Gear Selector - V1.41 -> http://www.armaholic.com/page.php?id=26181
 */
 //-----------------------------------------------------------------------------------------------
 
-//Inicializar sistema medico
-medico = (paramsArray select 0);
-execVM "configXMedSys.sqf";
-
 //Ocultar posicion en mapa
 h = [] spawn {
 	disableSerialization;
@@ -55,6 +51,9 @@ hintSilent "Academia ST1  Inicializando...";
 
 //Call function compiler
 _handle = execVM "scripts\functions.sqf";
+waitUntil {scriptDone _handle};
+//Inicializar sistema medico
+_handle = execVM "configXMedSys.sqf";
 waitUntil {scriptDone _handle};
 //Call addactions to flags and boxes
 _handle = execVM "scripts\addActions.sqf";

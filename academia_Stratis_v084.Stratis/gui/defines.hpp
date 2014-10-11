@@ -46,6 +46,10 @@
 #define ST_DOWN           0x04
 #define ST_UP             0x08
 #define ST_VCENTER        0x0C
+#define ST_GROUP_BOX       96
+#define ST_GROUP_BOX2      112
+#define ST_ROUNDED_CORNER  ST_GROUP_BOX + ST_CENTER
+#define ST_ROUNDED_CORNER2 ST_GROUP_BOX2 + ST_CENTER
 
 #define ST_TYPE           0xF0
 #define ST_SINGLE         0x00
@@ -74,7 +78,7 @@
 
 #define SL_TEXTURES       0x10
 
-// progress bar 
+// progress bar
 #define ST_VERTICAL       0x01
 #define ST_HORIZONTAL     0
 
@@ -90,6 +94,86 @@
 #define MB_BUTTON_OK      1
 #define MB_BUTTON_CANCEL  2
 #define MB_BUTTON_USER    4
+
+
+//Objetos Mapa
+#define	flag_west		"\A3\ui_f\data\gui\rsc\RscDisplayMultiplayerSetup\flag_bluefor_ca.paa"
+#define	flag_east		"\A3\ui_f\data\gui\rsc\RscDisplayMultiplayerSetup\flag_opfor_ca.paa"
+#define	flag_guer		"\A3\ui_f\data\gui\rsc\RscDisplayMultiplayerSetup\flag_indep_ca.paa"
+#define	flag_civl		"\A3\ui_f\data\gui\rsc\RscDisplayMultiplayerSetup\flag_civil_ca.paa"
+#define GUI_FONT_NORMAL		PuristaMedium
+#define GUI_FONT_BOLD		PuristaSemibold
+#define GUI_FONT_MONO		EtelkaMonospaceProBold
+#define GUI_FONT_SMALL		PuristaMedium
+#define GUI_FONT_THIN		PuristaLight
+#define GUI_BCG_RGB_R		"(profileNamespace getvariable ['GUI_BCG_RGB_R',0.6784])"
+#define GUI_BCG_RGB_G		"(profileNamespace getvariable ['GUI_BCG_RGB_G',0.7490])"
+#define GUI_BCG_RGB_B		"(profileNamespace getvariable ['GUI_BCG_RGB_B',0.5137])"
+#define GUI_BCG_RGB_A		"(profileNamespace getvariable ['GUI_BCG_RGB_A',0.7000])"
+#define GUI_BLU_RGB_R		"(profilenamespace getvariable ['Map_BLUFOR_R',0.0])"
+#define GUI_BLU_RGB_G		"(profilenamespace getvariable ['Map_BLUFOR_G',0.8])"
+#define GUI_BLU_RGB_B		"(profilenamespace getvariable ['Map_BLUFOR_B',1.0])"
+#define GUI_BLU_RGB_A		"(profilenamespace getvariable ['Map_BLUFOR_A',0.8])"
+#define GUI_OPF_RGB_R		"(profilenamespace getvariable ['Map_BLUFOR_R',0.0])"
+#define GUI_OPF_RGB_G		"(profilenamespace getvariable ['Map_BLUFOR_G',1.0])"
+#define GUI_OPF_RGB_B		"(profilenamespace getvariable ['Map_BLUFOR_B',1.0])"
+#define GUI_OPF_RGB_A		"(profilenamespace getvariable ['Map_BLUFOR_A',0.8])"
+#define GUI_IND_RGB_R		"(profilenamespace getvariable ['Map_BLUFOR_R',0.0])"
+#define GUI_IND_RGB_G		"(profilenamespace getvariable ['Map_BLUFOR_G',1.0])"
+#define GUI_IND_RGB_B		"(profilenamespace getvariable ['Map_BLUFOR_B',1.0])"
+#define GUI_IND_RGB_A		"(profilenamespace getvariable ['Map_BLUFOR_A',0.8])"
+#define BUTTON_SOUND_CLICK	{"\A3\ui_f\data\sound\onclick", 0.07, 1}
+#define BUTTON_SOUND_ENTER	{"\A3\ui_f\data\sound\onover", 0.09, 1}
+#define BUTTON_SOUND_ESCAP	{"\A3\ui_f\data\sound\onescape", 0.09, 1}
+#define BUTTON_SOUND_BPUSH	{"\A3\ui_f\data\sound\new1", 0.0, 0}
+#define SCROLL_ARROW_EMPTY	"\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"
+#define SCROLL_ARROR_FULL	"\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"
+#define SCROLL_BORDER		"\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"
+#define SCROLL_THUMB		"\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"
+#define COMBO_ARROW_EMPTY	"\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa"
+#define COMBO_ARROW_FULL	"\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa"
+#define ANIMTEXT_DEFAULT	"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa"
+#define ANIMTEXT_NORMAL		"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa"
+#define ANIMTEXT_DISABLED	"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa"
+#define ANIMTEXT_OVER		"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\over_ca.paa"
+#define ANIMTEXT_FOCUS		"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\focus_ca.paa"
+#define ANIMTEXT_PRESS		"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\down_ca.paa"
+#define ANIMTEXT_NOSHORT	"\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa"
+#define MAP_ICON_BUNKER		"\A3\ui_f\data\map\mapcontrol\bunker_ca.paa"
+#define MAP_ICON_BUSH		"\A3\ui_f\data\map\mapcontrol\bush_ca.paa"
+#define MAP_ICON_BUSSTOP	"\A3\ui_f\data\map\mapcontrol\busstop_CA.paa"
+#define MAP_ICON_CHAPEL 	"\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa"
+#define MAP_ICON_CHURCH 	"\A3\ui_f\data\map\mapcontrol\church_CA.paa"
+#define MAP_ICON_COMMAND	"\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa"
+#define MAP_ICON_CROSS		"\A3\ui_f\data\map\mapcontrol\Cross_CA.paa"
+#define MAP_ICON_CUSTOMMARK	"\A3\ui_f\data\map\mapcontrol\custommark_ca.paa"
+#define MAP_ICON_FORTRSS	"\A3\ui_f\data\map\mapcontrol\bunker_ca.paa"
+#define MAP_ICON_FOUNTAIN	"\A3\ui_f\data\map\mapcontrol\fountain_ca.paa"
+#define MAP_ICON_FUEL		"\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa"
+#define MAP_ICON_HOSTPITAL	"\A3\ui_f\data\map\mapcontrol\hospital_CA.paa"
+#define MAP_ICON_LIGHTHSE	"\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa"
+#define MAP_ICON_POWER		"\A3\ui_f\data\map\mapcontrol\power_CA.paa"
+#define MAP_ICON_POWERSOLAR	"\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa"
+#define MAP_ICON_POWERWAVE	"\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa"
+#define MAP_ICON_POWERWIND	"\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa"
+#define MAP_ICON_QUAY		"\A3\ui_f\data\map\mapcontrol\quay_CA.paa"
+#define MAP_ICON_ROCK		"\A3\ui_f\data\map\mapcontrol\rock_ca.paa"
+#define MAP_ICON_RUIN		"\A3\ui_f\data\map\mapcontrol\ruin_ca.paa"
+#define MAP_ICON_SHIPWRECK	"\A3\ui_f\data\map\mapcontrol\shipwreck_CA.paa"
+#define MAP_ICON_TREESMALL	"\A3\ui_f\data\map\mapcontrol\bush_ca.paa"
+#define MAP_ICON_STACK		"\A3\ui_f\data\map\mapcontrol\stack_ca.paa"
+#define MAP_ICON_TASK		"\A3\ui_f\data\map\mapcontrol\taskIcon_CA.paa"
+#define MAP_ICON_TASK_CREA	"\A3\ui_f\data\map\mapcontrol\taskIconCreated_CA.paa"
+#define MAP_ICON_TASK_CANX	"\A3\ui_f\data\map\mapcontrol\taskIconCanceled_CA.paa"
+#define MAP_ICON_TASK_DONE	"\A3\ui_f\data\map\mapcontrol\taskIconDone_CA.paa"
+#define MAP_ICON_TASK_FAIL	"\A3\ui_f\data\map\mapcontrol\taskIconFailed_CA.paa"
+#define MAP_ICON_TOURISM	"\A3\ui_f\data\map\mapcontrol\tourism_ca.paa"
+#define MAP_ICON_TRANSMITR	"\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa"
+#define MAP_ICON_TREE		"\A3\ui_f\data\map\mapcontrol\bush_ca.paa"
+#define MAP_ICON_VIEWTWR	"\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa"
+#define MAP_ICON_WATERTWR	"\A3\ui_f\data\map\mapcontrol\watertower_CA.paa"
+#define MAP_ICON_WP		"\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa"
+#define MAP_ICON_WP_CMPL	"\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa"
 
 
 ///////////////////////////////////////////////////////////////////////////
@@ -161,21 +245,21 @@ class RscEdit
 	y = 0;
 	h = 0.04;
 	w = 0.2;
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorText[] = 
+	colorText[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorSelection[] = 
+	colorSelection[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
@@ -189,7 +273,7 @@ class RscEdit
 	font = "PuristaMedium";
 	shadow = 2;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
@@ -223,7 +307,7 @@ class RscEdit
 	};
 		class ComboScrollBar
 	{
-		color[] = 
+		color[] =
 		{
 			1,
 			1,
@@ -253,56 +337,56 @@ class RscListBox
 	w = 0.4;
 	h = 0.4;
 	rowHeight = 0;
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorScrollbar[] = 
+	colorScrollbar[] =
 	{
 		1,
 		0,
 		0,
 		0
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelect2[] = 
+	colorSelect2[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelectBackground[] = 
+	colorSelectBackground[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorSelectBackground2[] = 
+	colorSelectBackground2[] =
 	{
 		1,
 		1,
 		1,
 		0.5
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0.3
 	};
-	soundSelect[] = 
+	soundSelect[] =
 	{
 		"",
 		0.1,
@@ -310,7 +394,7 @@ class RscListBox
 	};
 	class ListScrollBar
 	{
-		color[] = 
+		color[] =
 		{
 			1,
 			1,
@@ -323,21 +407,21 @@ class RscListBox
 	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
 	class ScrollBar
 	{
-		color[] = 
+		color[] =
 		{
 			1,
 			1,
 			1,
 			0.6
 		};
-		colorActive[] = 
+		colorActive[] =
 		{
 			1,
 			1,
 			1,
 			1
 		};
-		colorDisabled[] = 
+		colorDisabled[] =
 		{
 			1,
 			1,
@@ -354,21 +438,21 @@ class RscListBox
 	font = "PuristaMedium";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 0;
-	colorShadow[] = 
+	colorShadow[] =
 	{
 		0,
 		0,
 		0,
 		0.5
 	};
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
@@ -381,53 +465,53 @@ class RscListBox
 	autoScrollDelay = 5;
 	autoScrollRewind = 0;
 };
-class RscButton 
+class RscButton
 {
   	access = 0;
   	borderSize = 0;
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		0.7
 	};
-	colorBackgroundDisabled[] = 
+	colorBackgroundDisabled[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorBackgroundActive[] = 
+	colorBackgroundActive[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorFocused[] = 
+	colorFocused[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorShadow[] = 
+	colorShadow[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorBorder[] = 
+	colorBorder[] =
 	{
 		0,
 		0,
@@ -480,51 +564,51 @@ class RscShortcutButton
 		right = 0.005;
 		bottom = 0;
 	};
-	shortcuts[] = 
+	shortcuts[] =
 	{
 	};
 	textureNoShortcut = "#(argb,8,8,3)color(0,0,0,0)";
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	color2[] = 
+	color2[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorBackground2[] = 
+	colorBackground2[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorFocused[] = 
+	colorFocused[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
-		1	
+		1
 	};
 	colorBackgroundFocused[] =
 	{
@@ -540,7 +624,7 @@ class RscShortcutButton
 		align = "left";
 		shadow = "true";
 	};
-	
+
 	idc = -1;
 	style = 0;
 	default = 0;
@@ -560,25 +644,25 @@ class RscShortcutButton
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	text = "";
-	soundEnter[] = 
+	soundEnter[] =
 	{
 		"\A3\ui_f\data\sound\onover",
 		0.09,
 		1
 	};
-	soundPush[] = 
+	soundPush[] =
 	{
 		"\A3\ui_f\data\sound\new1",
 		0,
 		0
 	};
-	soundClick[] = 
+	soundClick[] =
 	{
 		"\A3\ui_f\data\sound\onclick",
 		0.07,
 		1
 	};
-	soundEscape[] = 
+	soundEscape[] =
 	{
 		"\A3\ui_f\data\sound\onescape",
 		0.09,
@@ -675,7 +759,7 @@ class RscSlider
 	shadow = 0;
 	h = 0.025;
 };
-class RscMapControl 
+class RscMapControl
 	{
 	access = 0;
 	alphaFadeEndScale = 0.4;
@@ -1048,7 +1132,7 @@ class RscMapControl
 		importance = 1;
 		size = 24;
 		};
-	
+
 	};
 class RscCheckbox
 {
@@ -1059,56 +1143,56 @@ class RscCheckbox
 	y = "LINE_Y";
 	w = "LINE_W(WVAL)";
 	h = 0.029412;
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		0,
 		0,
 		1
 	};
-	color[] = 
+	color[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		1,
 		1
 	};
-	colorTextSelect[] = 
+	colorTextSelect[] =
 	{
 		0,
 		0.8,
 		0,
 		1
 	};
-	colorSelectedBg[] = 
+	colorSelectedBg[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorTextDisable[] = 
+	colorTextDisable[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	colorDisable[] = 
+	colorDisable[] =
 	{
 		0.4,
 		0.4,
@@ -1119,11 +1203,11 @@ class RscCheckbox
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	rows = 1;
 	columns = 1;
-	strings[] = 
+	strings[] =
 	{
 		"       Deactivated"
 	};
-	checked_strings[] = 
+	checked_strings[] =
 	{
 		"       Activated"
 	};
@@ -1137,56 +1221,56 @@ class RscCheckbox2
 	y = "LINE_Y";
 	w = "LINE_W(WVAL)";
 	h = 0.029412;
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		0,
 		0,
 		1
 	};
-	color[] = 
+	color[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		1,
 		1
 	};
-	colorTextSelect[] = 
+	colorTextSelect[] =
 	{
 		0,
 		0.8,
 		0,
 		1
 	};
-	colorSelectedBg[] = 
+	colorSelectedBg[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorTextDisable[] = 
+	colorTextDisable[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	colorDisable[] = 
+	colorDisable[] =
 	{
 		0.4,
 		0.4,
@@ -1197,11 +1281,11 @@ class RscCheckbox2
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	rows = 1;
 	columns = 1;
-	strings[] = 
+	strings[] =
 	{
 		"Deactivated"
 	};
-	checked_strings[] = 
+	checked_strings[] =
 	{
 		"Activated"
 	};
@@ -1215,56 +1299,56 @@ class RscCheckbox3
 	y = "LINE_Y";
 	w = "LINE_W(WVAL)";
 	h = 0.029412;
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		0,
 		0,
 		1
 	};
-	color[] = 
+	color[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		1,
 		1
 	};
-	colorTextSelect[] = 
+	colorTextSelect[] =
 	{
 		0,
 		0.8,
 		0,
 		1
 	};
-	colorSelectedBg[] = 
+	colorSelectedBg[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",
 		1
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorTextDisable[] = 
+	colorTextDisable[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	colorDisable[] = 
+	colorDisable[] =
 	{
 		0.4,
 		0.4,
@@ -1275,11 +1359,11 @@ class RscCheckbox3
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	rows = 1;
 	columns = 1;
-	strings[] = 
+	strings[] =
 	{
 		"OFF"
 	};
-	checked_strings[] = 
+	checked_strings[] =
 	{
 		"ON"
 	};

@@ -13,7 +13,6 @@ X39_MedSys_Generic_DamageBeforePermaKnockOut=8;
 X39_MedSys_Bleeding_BloodLossPerTickModificator = 0.5; //Multiplicador hemorragia (+-300s)
 X39_MedSys_Bleeding_KnockOutBloodLimit = 3000; //Limite de sangre para perder el conocimiento (def:6000)
 
-if (medico == 1) then {
 //Limitar opciones medicas (solo medico puede curar completamente)
 #define BANDAGE "Bandage"
 #define BLOOD "Blood"
@@ -28,7 +27,7 @@ if (medico == 1) then {
 ["Dephibrilate", "B_medic_F"] call X39_MedSys_fnc_addLimitationToClass;
 ["MedKit", "B_medic_F"] call X39_MedSys_fnc_addLimitationToClass;
 [] call X39_MedSys_fnc_pushLimitations;
-};
 
 //Confirma
-hint "XMedSys inicializado con exito";
+[["XMedSys inicializado con exito", "BASE"],"fnc_globalsidechat",true,false] spawn BIS_fnc_MP;
+//hintSilent "XMedSys inicializado con exito";

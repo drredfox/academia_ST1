@@ -60,20 +60,20 @@
 		clearItemCargo VAS_6;
 		VAS_6 addAction["<t color='#ff1111'>Equipamiento</t>", "ASORGS\open.sqf"];
 
-	//Urban training zone; case 8
+	//Urban training zone;
 
 		//flag_urb_training allowDamage false;
 		//flag_urb_training addAction [("<t color=""#BFFF00"">" + "Comenzar entrenamiento urbano" + "</t>"), "scripts\actions\urbantraining_start.sqf",[], 3, false, true, "", "!THR_UrbanTraining_Active"];
 		//flag_urb_training addAction [("<t color=""#ff1111"">" + "Cancelar entrenamiento urbano" + "</t>"), "scripts\actions\urbantraining_stop.sqf",[], 3, false, true, "", "THR_UrbanTraining_Active"];*/
 
-	//kamino mission control; case 11
+	//kamino mission control;
 
 		flag_missioncontrol allowDamage false;
 		flag_missioncontrol enableSimulation false;
 		flag_missioncontrol addAction [("<t color=""#BFFF00"">" + "Liberar MCC Sandbox" + "</t>"), "scripts\actions\missioncontrol_freemcc.sqf",[], 3, false, true, "", ""];
 		flag_missioncontrol addAction [("<t color=""#BFFF00"">" + "Ejecutar limpieza de servidor" + "</t>"), "[false,0] spawn fnc_cleanup;",[], 3, false, true, "", ""];
 
-	//Mortars; case 12
+	//Mortars;
 
 		mortar_1 allowDamage false;
 		mortar_2 addAction [("<t color=""#FFFF00"">" + "Rearmar" + "</t>"), "scripts\actions\repair.sqf"];
