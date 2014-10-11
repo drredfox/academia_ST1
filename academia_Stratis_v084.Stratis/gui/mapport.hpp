@@ -48,7 +48,7 @@ class RscButton_1600: RscButton
 	y = 0.336016 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_Kamino] call fnc_teleport;";
+	action="[TP_Kamino] spawn fnc_teleport;";
 };
 class RscButton_1601: RscButton
 {
@@ -58,7 +58,7 @@ class RscButton_1601: RscButton
 	y = 0.376298 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_Franco] call fnc_teleport;";
+	action="[TP_Franco] spawn fnc_teleport;";
 };
 class RscButton_1602: RscButton
 {
@@ -68,7 +68,7 @@ class RscButton_1602: RscButton
 	y = 0.417532 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_Morteros] call fnc_teleport;";
+	action="[TP_Morteros] spawn fnc_teleport;";
 };
 class RscButton_1603: RscButton
 {
@@ -78,7 +78,7 @@ class RscButton_1603: RscButton
 	y = 0.458766 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_Demoliciones] call fnc_teleport;";
+	action="[TP_Demoliciones] spawn fnc_teleport;";
 };
 class RscButton_1604: RscButton
 {
@@ -88,7 +88,7 @@ class RscButton_1604: RscButton
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.108036 * safezoneW;
 	h = 0.0343169 * safezoneH;
-	action="[TP_BAerea] call fnc_teleport;";
+	action="[TP_BAerea] spawn fnc_teleport;";
 };
 /* class RscButton_1606: RscButton
 {

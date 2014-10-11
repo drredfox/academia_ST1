@@ -3,10 +3,8 @@ class CfgFunctions
 	#include "ASORGS\cfgfunctions.hpp"
 };
 #include "gui\defines.hpp"
-#include "gui\baseMenu.hpp"
 #include "gui\mapport.hpp"
 #include "gui\vehicleSpawner.hpp"
-#include "gui\equipCrate.hpp"
 
 #include "ASORGS\menu.hpp"
 #include "scripts\ShootingRange\common.hpp"
@@ -30,13 +28,9 @@ saving = 0;
 
 author = ST1;
 overviewPicture = "\a3\missions_f\data\img\skirmish_overview_ca.paa";
-overviewText = "Academia Combinada ST1 - v0.83.7";
+overviewText = "Academia Combinada ST1 - v0.84";
 onLoadName = Academia Stratis;
 loadScreen = "images\splash_academia.jpg";
-onLoadMission = "Academia Combinada ST1 - v0.83.7";
+onLoadMission = "Academia Combinada ST1 - v0.84";
 OnLoadMissionTime = false;
 debriefing=0;
-
-
-
-//#include "hcam\hcam.hpp" -> helmet cam defined in rscA2BasicDefines.hpp

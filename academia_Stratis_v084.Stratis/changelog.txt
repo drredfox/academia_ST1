@@ -1,0 +1,93 @@
+//-Changelog---------------------------------------------------------------------
+/*
+-v0.84
+	> Añadido: spawn de vehiculos con preview
+	> Añadido: teleport global con mapa.
+	> Cambios: convertidos a funciones todos los scripts posibles para reducir carga
+	> cambios: imagenes reducidas para disminuir tamaño
+	> Cambios: esperas en las compilaciones iniciales para asegurar la carga completa antes del inicio de mision.
+	> Eliminado: portaviones
+	> Eliminado: scripts, funciones, llamadas superfluas o no usadas.
+-v0.83.7
+	> Añadido: dos UH-80 MEDEVAC
+	> Eliminado: imagenes varias para reducir peso
+	> Eliminado: script "igiLoad"
+	> Eliminado: IA de portaaviones
+	> Modificado: reincorporados modulos CSE
+	> Modificado: aumentado sleep caja medica a 600
+	> Modificado: ocultar mapa solo a clientes reales
+	> Corregido: errores "Caja de Equipamiento" y "Creador de Vehiculos"
+	> Corregido: error en portaaviones "Error in expression <mylight setLightColor..."
+-v0.83.5
+	> Eliminados modulos CSE excepto CMS (test)
+	> Eliminado script "inventarioHeli" con objetos de XMedSys
+-v0.84.0
+	> Modificado modulo CSE
+	> Agregados: paramedicos
+	> Corregido: ambulancia
+	> Habilitada Galeria de Tiro
+-v0.83.3
+	> Deshabilitada "Galeria de Tiro" para comprobar estabilidad server.
+-v0.83.1
+	> Modificada localidad "Galeria de Tiro". Llamado por init.sqf
+-v0.83.0
+	> Modificada llamada "Galeria de Tiro" (precompilar)
+	> A?adido CSE y objetos
+-v0.8.0
+	> A?adido Campo de Tiro (Autor: SMA Team, modificado por Dr.Redfox)
+	> A?adido punto de spawn para aviones
+	> Modifica posici?n del multispawn de helicopteros
+- v0.7.3
+	> Actualizado VAS
+	> Cambiada bandera
+	> A?adidos slots de explosivos (temporal)
+- v0.7.2
+	> Movido todo el conjunto del LHD mas cerca de la base
+- v0.7.1
+	> A?adido otro F35 en cubierta
+	> A?adida lancha HMG y SDV al muelle del LHD
+	> Cargado script IGILOAD en init del CH47 del LHD
+	> Corregidas alturas de los Stands de teleport del LHD
+- v0.7
+	> A?adido USS completo con iluminacion y muelles
+- v0.6.1
+	> Actualizado spawn de vehiculos
+	> A?adidos Infostands con normas academia
+	> Eliminado player addWeapon "RangeFinder";
+	> Ajustadas frecuencias predefinidas de radio
+- v0.6
+	> A?adido Campo de entrenamiento aereo
+	> A?adido igiLoad
+	> Corregidos los fallos de item
+	> Actualizado VAS
+	> A?adidas cajas TFR y eliminadas la anteriores
+- v0.5
+	> Modificada para la ST1
+	> A?adido XMedSys
+	> Eliminado BTC Revive
+	> Nueva distribucion de slots
+	> Actualizado VAS
+	> Colocadas cajas estandar
+- v0.4
+	>Eliminado MCC sandbox, para utilizar la versi?n de addon
+	>Arreglado script de expulsar al mission maker
+	>Eliminado helmetcam, ya que viene incluido en el modulo special forces del MCC
+	>Cambiada radio por defecto de 343 a 148_UHF
+	>A?adidos a los spawns los vehiculos de la versi?n final de arma 3
+	>Modificadas cajas de armas,objetos y ropa con las cosas nuevas de la versi?n final
+- v0.3
+	>A?adida opcion para ejecutar limpieza de servidor manualmente
+	>A?adido script para salto HALO
+- v0.21
+	>Eliminados objetos con errores de algunas cajas
+- v0.2
+	>Arreglado peque?o fallo de una pared que se destruia en el campo de tiro.
+	>Cambios en description, arreglado n?mero de slots e imagen de overview.
+	>A?adido helmet cam.
+	>Arregladas las funciones del men? de instructor de piloto, actualmente tenian un error en la ruta de los scripts y no funcionaban.
+	>Actualizado VAS a 1.7
+	>A?adida opcion para expulsar al mission maker del MCC
+	>A?adido script de servidor para eliminar periodicamente objetos, cadaveres y vehiculos destruidos
+	>A?adida bulletcam a los morteros
+- v0.1 
+	>lanzamiento p?blico

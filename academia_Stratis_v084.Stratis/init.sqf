@@ -9,7 +9,7 @@ ASOR Gear Selector - V1.41 -> http://www.armaholic.com/page.php?id=26181
 */
 //-TODO---------------------------------------------------------------------
 /*
--Limitar VAS: excluir CAF Agressors
+-Limitar ASOR: excluir CAF Agressors
 -Crear caja de armamento. Copiar funcionamiento "caja de ropa"
 -estandarizar teletransportes de bandera
 -campo de vehiculos
@@ -17,6 +17,10 @@ ASOR Gear Selector - V1.41 -> http://www.armaholic.com/page.php?id=26181
 -cambiar los hints globales por notificaciones centrales?
 */
 //-----------------------------------------------------------------------------------------------
+
+//Inicializar sistema medico
+medico = (paramsArray select 0);
+execVM "configXMedSys.sqf";
 
 //Ocultar posicion en mapa
 h = [] spawn {
@@ -50,20 +54,17 @@ player enableSimulation false;//Block player movement while doing init
 hintSilent "Academia ST1  Inicializando...";
 
 //Call function compiler
-execVM "scripts\functions.sqf";
+_handle = execVM "scripts\functions.sqf";
+waitUntil {scriptDone _handle};
 //Call addactions to flags and boxes
-execVM "scripts\addActions.sqf";
+_handle = execVM "scripts\addActions.sqf";
+waitUntil {scriptDone _handle};
 //Shooting Range
-execVM "scripts\ShootingRange\ShootingRangeInit.sqf";
+_handle = execVM "scripts\ShootingRange\ShootingRangeInit.sqf";
+waitUntil {scriptDone _handle};
 
 //Init periodic cleanup
 [true,60] spawn fnc_cleanup;
-
-//aca_air init
-if (isNil "var_vehicle_created") then {var_vehicle_created = false;};
-if (isNil "var_new_vehicle") then {var_new_vehicle = [];};
-"var_vehicle_created" addPublicVariableEventHandler {[] execVM "scripts\action_adder.sqf";};
-
 
 //bulletcam script init
 bulletcam_running = false;
