@@ -19,6 +19,9 @@ call compile preprocessFileLineNumbers "scripts\functions\fnc_teleport.sqf";
 //Salto HALO
 call compile preprocessFileLineNumbers "scripts\functions\fnc_halo_jump.sqf";
 
+//Academia aire
+call compile preprocessFileLineNumbers "scripts\functions\fnc_aca_aire.sqf";
+
 //Borrar Vehiculos
 call compile preprocessFileLineNumbers "scripts\functions\fnc_delete.sqf";
 
