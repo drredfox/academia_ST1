@@ -39,21 +39,22 @@ switch (_select) do {
 		Gorgon=["I_APC_Wheeled_03_cannon_F"];
 		Zamak=["I_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_covered_F","I_Truck_02_transport_F"];
 		HEMTT=["B_Truck_01_transport_F","B_Truck_01_covered_F","B_Truck_01_Repair_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_mover_F","B_Truck_01_box_F"];
-		Marshalls=["B_APC_Wheeled_01_cannon_F"];
+		BTR=["SUD_BTR100"];
+		Marshalls=["B_APC_Wheeled_01_cannon_F","ST1_APC_Wheeled_01_cannon_FG","ST1_APC_Wheeled_01_WL_cannon_FG","ST1_APC_Wheeled_01_DS_cannon_FG"];
 		Marid=["O_APC_Wheeled_02_rcws_F"];
 		Strider=["I_MRAP_03_F","I_MRAP_03_hmg_F","I_MRAP_03_gmg_F"];
 		Ifrit=["O_MRAP_02_F","O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"];
 		Hunter=["B_MRAP_01_F","B_MRAP_01_gmg_F","B_MRAP_01_hmg_F"];
 		Civiles=["Offroad","Quad","Hatchback","SUV","Van"];
-		Offroad=["C_Offroad_01_F","B_G_Offroad_01_armed_F","I_G_Offroad_01_F"];
+		Offroad=["C_Offroad_01_F","B_G_Offroad_01_armed_F","I_G_Offroad_01_F","CAF_AG_eeur_r_Offroad","CAF_AG_eeur_r_Offroad_armed_01"];
 		Quad=["B_Quadbike_01_F","I_Quadbike_01_F","O_Quadbike_01_F","C_Quadbike_01_F","O_G_Quadbike_01_F"];
 		Hatchback=["C_Hatchback_01_F","C_Hatchback_01_sport_F"];
 		Tempest=["O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F"];
 		SUV=["C_SUV_01_F"];
-		Van=["C_Van_01_box_F"];
+		Van=["C_Van_01_box_F","CAF_AG_eeur_r_van_01"];
 		Blindados=["APCs_Blindados","MBTs","SPGs","AAs"];
 		APCs_Blindados=["O_APC_Tracked_02_cannon_F","B_APC_Tracked_01_rcws_F","B_APC_Tracked_01_CRV_F","I_APC_tracked_03_cannon_F"];
-		MBTs=["B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_MBT_02_cannon_F","I_MBT_03_cannon_F"];
+		MBTs=["B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_MBT_02_cannon_F","I_MBT_03_cannon_F","ST1_MBT_01_cannon_FG","ST1_MBT_01_WL_cannon_FG","ST1_MBT_01_DS_cannon_FG"];
 		SPGs=["O_MBT_02_arty_F","B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
 		AAs=["B_APC_Tracked_01_AA_F","O_APC_Tracked_02_AA_F"];
 		UAV_Terrestre=["UGV"];
@@ -70,15 +71,21 @@ switch (_select) do {
 		_contrl ctrlSetStructuredText parseText _ttext;
 
 		_array=["Helis_Ataque","Helis_Transporte","UAV_Rotores"];
-		Helis_Ataque=["AH9","Commanche","Havoc"];
+		Helis_Ataque=["AH9","Commanche","Havoc","AH1","Apache","UH1_Venom"];
 		Havoc=["O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","SUD_MI48_RU"];
 		Commanche=["B_Heli_Attack_01_F","ST1_AH_99_FG"];
 		AH9=["B_Heli_Light_01_armed_F","B_Heli_Light_01_F","ST1_AH_9_FG","ST1_MH_9_FG"];
-		Helis_Transporte=["KA60","UH","Mohawk","Hellcat"];
+		Helis_Transporte=["KA60","UH","Mohawk","Hellcat","BlackHawk","UH1_Huey","Chinook"];
 		Mohawk=["I_Heli_Transport_02_F","ST1_CH49_Mohawk_FG"];
 		UH=["B_Heli_Transport_01_F","B_Heli_Transport_01_Camo_F","ST1_UH_80_FG","ST1_UH_80_MED_FG"];
 		KA60=["O_Heli_Light_02_unarmed_F","O_Heli_Light_02_F","SUD_KA60_RU"];
 		Hellcat=["I_Heli_light_03_F","I_Heli_light_03_unarmed_F"];
+		AH1=["AH1z"];
+		UH1_Venom=["UH1Y"];
+		BlackHawk=["UH60M","UH60M_MEV"];
+		UH1_Huey=["UH1H"];
+		Apache=["AH64D"];
+		Chinook=["CH_47F"];
 		UAV_Rotores=["UAV_Portatil"];
 		UAV_Portatil=["B_UAV_01_F"];
 
@@ -94,7 +101,9 @@ switch (_select) do {
 		_contrl ctrlSetStructuredText parseText _ttext;
 
 		_array=["Aviones","UAV_Aereo"];
-		Aviones=["Buzzard","Wipeout","Neophron"];
+		Aviones=["Buzzard","Wipeout","Neophron","F35B","F18"];
+		F35B=["CHO_F35B_AA","CHO_F35B_CAS","CHO_F35B_LGB"];
+		F18=["JS_JC_FA18E","JS_JC_FA18F"];
 		Buzzard=["I_Plane_Fighter_03_AA_F","I_Plane_Fighter_03_CAS_F"];
 		Wipeout=["B_Plane_CAS_01_F"];
 		Neophron=["O_Plane_CAS_02_F"];

@@ -13,37 +13,45 @@ deleteVehicle i11;
 deleteVehicle i12;
 deleteVehicle i13;
 
+//CM
+deleteVehicle CM1;
+deleteVehicle CM2;
+
 //Alpha
-deleteVehicle a1;
-deleteVehicle a2;
-deleteVehicle a3;
-deleteVehicle a4;
-deleteVehicle a5;
-deleteVehicle a6;
-deleteVehicle a7;
-deleteVehicle a8;
-deleteVehicle a9;
-deleteVehicle a10;
-deleteVehicle a11;
-deleteVehicle a12;
-deleteVehicle a13;
-deleteVehicle a14;
+deleteVehicle AM_1;
+deleteVehicle AM_2;
+
+deleteVehicle A1_1;
+deleteVehicle A1_2;
+deleteVehicle A1_3;
+deleteVehicle A1_4;
+deleteVehicle A1_5;
+deleteVehicle A1_6;
+
+deleteVehicle A2_1;
+deleteVehicle A2_2;
+deleteVehicle A2_3;
+deleteVehicle A2_4;
+deleteVehicle A2_5;
+deleteVehicle A2_6;
 
 //Bravo
-deleteVehicle b1;
-deleteVehicle b2;
-deleteVehicle b3;
-deleteVehicle b4;
-deleteVehicle b5;
-deleteVehicle b6;
-deleteVehicle b7;
-deleteVehicle b8;
-deleteVehicle b9;
-deleteVehicle b10;
-deleteVehicle b11;
-deleteVehicle b12;
-deleteVehicle b13;
-deleteVehicle b14;
+deleteVehicle BM_1;
+deleteVehicle BM_2;
+
+deleteVehicle B1_1;
+deleteVehicle B1_2;
+deleteVehicle B1_3;
+deleteVehicle B1_4;
+deleteVehicle B1_5;
+deleteVehicle B1_6;
+
+deleteVehicle B2_1;
+deleteVehicle B2_2;
+deleteVehicle B2_3;
+deleteVehicle B2_4;
+deleteVehicle B2_5;
+deleteVehicle B2_6;
 
 //Sierra
 deleteVehicle s1;
@@ -61,3 +69,11 @@ deleteVehicle zap6;
 deleteVehicle zap7;
 deleteVehicle zap8;
 deleteVehicle zap9;
+
+//OPFOR
+deleteVehicle OP1;
+deleteVehicle OP2;
+deleteVehicle OP3;
+deleteVehicle OP4;
+deleteVehicle OP5;
+deleteVehicle OP6;

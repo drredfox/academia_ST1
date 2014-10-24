@@ -1,5 +1,11 @@
-//-Changelog---------------------------------------------------------------------
+﻿//-Changelog---------------------------------------------------------------------
 /*
+-v0.84.1
+	> Bugfixes
+	> Hangar para el Spawn de Aviones
+	> Incorporada la estructura de esquadras de la ST1
+	> Huecos para CSAT
+	> Init de la configuracion del MCC
 -v0.84
 	> Añadido: spawn de vehiculos con preview
 	> Añadido: teleport global con mapa.

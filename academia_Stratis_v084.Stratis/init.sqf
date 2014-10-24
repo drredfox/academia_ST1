@@ -17,6 +17,8 @@ ASOR Gear Selector - V1.41 -> http://www.armaholic.com/page.php?id=26181
 -cambiar los hints globales por notificaciones centrales?
 */
 //-----------------------------------------------------------------------------------------------
+_handle = execVM "scripts\functions.sqf";
+waitUntil {scriptDone _handle};
 
 //Ocultar posicion en mapa
 h = [] spawn {
@@ -47,10 +49,12 @@ removeVest player;
 
 //Init start
 player enableSimulation false;//Block player movement while doing init
-hintSilent "Academia ST1  Inicializando...";
+["Bienvenido a la Academia de la ST1", "BASE"] spawn fnc_globalsidechat;
 
-//Call function compiler
-_handle = execVM "scripts\functions.sqf";
+//igiload
+_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
+//MCC
+_handle = execVM "mcc_conf.sqf";
 waitUntil {scriptDone _handle};
 //Inicializar sistema medico
 _handle = execVM "configXMedSys.sqf";
@@ -76,7 +80,7 @@ THR_BTrajectoryRunning = false;
 
 //General Init finish
 waitUntil{MCC_initDone};
-hintSilent "Inicialización Completada";
+["Academia inicializada con exito", "BASE"] spawn fnc_globalsidechat;
 player enableSimulation true;
 
 //Post init

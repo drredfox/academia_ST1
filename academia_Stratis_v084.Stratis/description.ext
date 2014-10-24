@@ -2,6 +2,7 @@ class CfgFunctions
 {
 	#include "ASORGS\cfgfunctions.hpp"
 };
+//#include "LxOPS\lxOPS_dlg.hpp"
 #include "gui\defines.hpp"
 #include "gui\mapport.hpp"
 #include "gui\vehicleSpawner.hpp"
